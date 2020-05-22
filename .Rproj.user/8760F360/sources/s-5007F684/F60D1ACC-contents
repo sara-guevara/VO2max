@@ -39,7 +39,7 @@ tail(df)
 
 ## Data transformation
 
-changing the class of the gender factor
+##changing the class of the gender factor
 
 ```{r transform}
 df$gender <- as.factor(df$gender)
@@ -86,7 +86,7 @@ ggplot(df, aes(x = age, y = vo2_max, colour = gender)) +
   geom_smooth(method = "lm")
 ```
 
-There is a minor relationship between males and their age and VO2max, but not with females
+## There is a minor relationship between males and their age and VO2max, but not with females
 
 
 ```{r weight & VO2max with separate gender}
@@ -95,7 +95,7 @@ ggplot(df, aes(x = weight, y = vo2_max, colour = gender)) +
   geom_smooth(method = "lm")
 ```
 
-There seems to be a moderate relationship between weight & age and Vo2max for both male and females
+## There seems to be a moderate relationship between weight & age and Vo2max for both male and females
 
 ```{r heart_rate & VO2max with separate gender}
 ggplot(df, aes(x = heart_rate, y = vo2_max, colour = gender)) +
@@ -103,7 +103,7 @@ ggplot(df, aes(x = heart_rate, y = vo2_max, colour = gender)) +
   geom_smooth(method = "lm")
 ```
 
-There seems to be minimal to no relationship between heart_rate and VO2max when accounting for gender. 
+## There seems to be minimal to no relationship between heart_rate and VO2max when accounting for gender. 
 
 ```{r box plot}
 ggplot(data = df, aes(x = gender, y = vo2_max)) +
@@ -117,7 +117,7 @@ ggplot(data = df, aes(x = gender, y = vo2_max)) +
 pairs(formula = ~ age + weight + heart_rate, data = df)
 ```
 
-There doesn't seem to be much relationship between any of the explanatory variables
+## There doesn't seem to be much relationship between any of the explanatory variables
 
 
 ## Step 6 Mutiple linear regression
@@ -163,7 +163,7 @@ ggplot(data = NULL, aes(x = points, y = std_res)) +
   geom_hline(yintercept = c(-3,3), colour = "red", linetype = "dashed")
 ```
 
-There looks like there is 3 outliers
+## There looks like there is 3 outliers
 
 
 
