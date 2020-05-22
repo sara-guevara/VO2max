@@ -1,0 +1,17 @@
+"0","car::durbinWatsonTest(fit)
+"
+"1",""
+"1"," lag"
+"1"," Autocorrelation"
+"1"," D-W Statistic"
+"1"," p-value"
+"1","
+"
+"1","   1"
+"1","      0.02627848"
+"1","      1.910174"
+"1","   0.634"
+"1","
+"
+"1"," Alternative hypothesis: rho != 0
+"

@@ -1,0 +1,5 @@
+"0","dat <- read_excel(""data/vo2-max_data.xlsx"")
+"
+"2","Error in read_excel(""data/vo2-max_data.xlsx"") : 
+  could not find function ""read_excel""
+"
